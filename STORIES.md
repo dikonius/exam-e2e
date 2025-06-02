@@ -15,7 +15,9 @@ Favourites feature:
 
 Add new book feauture:
 1. Click on "Lägg till bok" navigation button and label "Titel" must be visible
-2. Type "testTitle" in Titel field and "testAuthor" in författare field, Click on "Lägg till ny bok" knappen under Författare field. Click on "Katalog" navigation button so text "testAuthor" will be visible.
+2. Fill form: "testTitle" in Titel field and "testAuthor" in författare field
+3. Click on "Lägg till ny bok" knappen under Författare field. 
+4. Click on "Katalog" navigation button so text "testAuthor" will be visible.
 
 
 Favourites feature for added book:
