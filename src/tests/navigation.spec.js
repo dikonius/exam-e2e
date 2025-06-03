@@ -16,39 +16,40 @@ test.describe('Navigation test', () => {
 		const visibleMyBooksEmpty = page.getByText('När du valt')
 		const visibleTitle = page.getByText('Titel')
 
-        await expect(page).toHaveTitle(/Läslistan/); //make sure that the page title is correct
+        // 1. Click on the link and see if the page loaded correctly
+        await expect(page).toHaveTitle(/Läslistan/); 
 
-        // 1. Click on "Lägg till bok" navigation button and label "Titel" must be visible
-
-        await addBookButton.click({ timeout: 500 })
-		await expect(visibleTitle).toBeVisible({ timeout: 500 })
-
-        // 2. Click on "Katalog" navigation button so text "Bertil Flimmer" will be visible.
-
-        await catalogueButton.click({ timeout: 500 })
-		await expect(visibleBertil).toBeVisible({ timeout: 500 })
-
-        // 3. Click on "Mina böcker" navigation button so text "När du valt" will be visible.
-
-        await myBookButton.click({ timeout: 500 })
-		await expect(visibleMyBooksEmpty).toBeVisible({ timeout: 500 })
-
-        // 4. Click on "Katalog" navigation button so text "Bertil Flimmer" will be visible.
-
-        await catalogueButton.click({ timeout: 500 })
-		await expect(visibleBertil).toBeVisible({ timeout: 500 })
-
-         // 5. Click on "Mina böcker" navigation button so text "När du valt" will be visible.
-
-        await myBookButton.click({ timeout: 500 })
-		await expect(visibleMyBooksEmpty).toBeVisible({ timeout: 500 })
-
-        // 6. Click on "Lägg till bok" navigation button and label "Titel" must be visible
+        // 2. Click on "Lägg till bok" navigation button and label "Titel" must be visible
 
         await addBookButton.click({ timeout: 500 })
 		await expect(visibleTitle).toBeVisible({ timeout: 500 })
 
-        // 7. Click on "Mina böcker" navigation button so text "När du valt" will be visible.
+        // 3. Click on "Katalog" navigation button so text "Bertil Flimmer" will be visible.
+
+        await catalogueButton.click({ timeout: 500 })
+		await expect(visibleBertil).toBeVisible({ timeout: 500 })
+
+        // 4. Click on "Mina böcker" navigation button so text "När du valt" will be visible.
+
+        await myBookButton.click({ timeout: 500 })
+		await expect(visibleMyBooksEmpty).toBeVisible({ timeout: 500 })
+
+        // 5. Click on "Katalog" navigation button so text "Bertil Flimmer" will be visible.
+
+        await catalogueButton.click({ timeout: 500 })
+		await expect(visibleBertil).toBeVisible({ timeout: 500 })
+
+         // 6. Click on "Mina böcker" navigation button so text "När du valt" will be visible.
+
+        await myBookButton.click({ timeout: 500 })
+		await expect(visibleMyBooksEmpty).toBeVisible({ timeout: 500 })
+
+        // 7. Click on "Lägg till bok" navigation button and label "Titel" must be visible
+
+        await addBookButton.click({ timeout: 500 })
+		await expect(visibleTitle).toBeVisible({ timeout: 500 })
+
+        // 8. Click on "Mina böcker" navigation button so text "När du valt" will be visible.
 
         await myBookButton.click({ timeout: 500 })
 		await expect(visibleMyBooksEmpty).toBeVisible({ timeout: 500 })

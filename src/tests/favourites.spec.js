@@ -5,7 +5,7 @@ test.describe('Testing favourite book feature', () => {
     await page.goto('https://tap-ht24-testverktyg.github.io/exam-template/');
     });
 
-  test('Clicking heart button for "Kaffekokaren" keeps heart icon visible', async ({ page }) => {
+  test('Clicking heart button for "Kaffekokaren" adds marked book to favourites', async ({ page }) => {
   
     const heartButton = page.getByTestId('star-Kaffekokaren som visste för mycket');
     const myBooksButton = page.getByRole('button', { name: 'Mina böcker' });

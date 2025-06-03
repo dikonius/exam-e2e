@@ -25,3 +25,9 @@ Jag upptäckte att "label" inte var kopplad till "input" med "for" och input-id.
 Därför använde jag getByTestId istället.
 
 Testkörningen visade att allt var grönt.
+
+Därefter skrev jag kod för Favourite Feature för ny tillagd bok.
+
+Eftersom koden var densamma som för Favourite Feature och Add New Book Feature slog jag ihop dem och ändrade endast namnen på locatorerna.
+
+Alla fyra tester visade grönt.
