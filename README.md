@@ -1,28 +1,27 @@
 Först skapade jag en user stories-fil där jag beskrev fyra delar av mitt projekt: Navigation, Favourite Feature, Add New Book Feature och Favourite New Book Feature.
 
-Sedan skrev jag stegvisa instruktioner för hur man testar varje del.
+Därefter skrev jag stegvisa instruktioner för hur varje del skulle testas.
 
-Därefter började jag testa navigeringen genom att skriva kod i exakt samma ordning som jag beskrev i mina user stories.
+Sedan började jag testa navigeringen genom att skriva kod i exakt samma ordning som beskrivits i mina user stories.
 
-Jag körde det första testet och upptäckte ett problem med att Playwright letade efter tester i fel mapp – det löste jag.
+När jag körde det första testet upptäckte jag ett problem: Playwright letade efter tester i fel mapp. Jag löste detta.
 
-Efter det stötte jag på ett problem med locator.getByText, så jag läste dokumentationen för att åtgärda felet.
+Därefter stötte jag på ett problem med locator.getByText, så jag läste dokumentationen för att åtgärda felet.
 
-Koden för navigationstestet blev klar, och allt fungerade som det skulle.
+Koden för navigationstestet blev klar, och allt fungerade som förväntat.
 
-Jag öppnade testrapporten för att säkerställa att hela testkedjan var med.
+Jag öppnade testrapporten för att säkerställa att hela testkedjan var inkluderad.
 
-Därefter började jag med Favourite Feature.
+Därefter började jag arbeta med Favourite Feature.
 
-Jag skrev kod till Favourites feature och använd getByTestId 
+Jag skrev kod för Favourite Feature och använde getByTestId.
 
-Test rapport visade att allting fungerar korrekt
+Testrapporten visade att allt fungerade korrekt.
 
-Jag skrev kod för Add-new-book feature
+Sedan skrev jag kod för Add New Book Feature.
 
-Uptcäkte att "label" är inte kopplat till "input" med "for" och input id.
+Jag upptäckte att "label" inte var kopplad till "input" med "for" och input-id.
 
-Så jag har använt getByTestId istället.
+Därför använde jag getByTestId istället.
 
-Kod test visade allting grönt.
-
+Testkörningen visade att allt var grönt.
